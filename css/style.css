@@ -1,5 +1,15 @@
-body {
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.div-home {
+    display: flex;
     background-color: #082a44;
+    width: 100%;
+    min-height: 85vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar-home{
@@ -7,4 +17,5 @@ body {
     background-color: #D9D9D9;
     justify-content: center;
     align-items: center;
+    min-height: 15vh;
 }
