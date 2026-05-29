@@ -4,29 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
     <title>Discovering Math</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
 </head>
 <body>
-    <nav class="navbar-home">
-        <a class="navbar-home-logotipo" href="#"><img src="assets/img/logotipo_sem_fundo.png" width="100" height="100"></a>
-        <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" id="turmas_dropdown">
-                Turmas
-            </button>
-        </div>
-        <form>
-            <input type="pesquisa_home" placeholder="Pesquisar...">
-        </form>
-        <a class="navbar-home-minhaConta" href="#"><img src="assets/img/minha_conta.png" width="100" height="100"></a>
-    </nav>
-    <div class="div-home">
-        <form>
-            <input type="file" accept="image/*" placeholder="Imagem">
-        </form>
+    <div class="page-container">
+        <nav class="navbar-home">
+            <div class="nav-left">
+                <a href="#">
+                    <img class="logo-image" src="assets/img/logotipo_sem_fundo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav-center">
+                <div class="nav-label">Turmas</div>
+                <div class="search-box">
+                    <input type="search" placeholder="Pesquisar...">
+                    <span class="search-icon">🔍</span>
+                </div>
+            </div>
+            <div class="nav-right">
+                <a class="navbar-home-minhaConta" href="#"><img src="assets/img/minha_conta.png" alt="Minha conta"></a>
+            </div>
+        </nav>
+        <main class="main-content">
+            <div class="hero">
+                <h1>Para que isso serve?</h1>
+                <form id="uploadForm" class="upload-form">
+                    <label for="imagemInput" class="file-upload-pill">
+                        <span>Imagem da Equação</span>
+                        <span class="upload-icon">🖼️</span>
+                    </label>
+                    <input id="imagemInput" type="file" name="imagem" accept="image/*" required>
+                </form>
+                <div id="uploadResult" class="upload-result"></div>
+            </div>
+        </main>
     </div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
