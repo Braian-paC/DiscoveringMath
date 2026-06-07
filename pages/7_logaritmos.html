@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logaritmos</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/logotipo_sem_fundo.png">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    
+    <div class="page-container">
+        <nav class="navbar-home">
+            <div class="nav-left"><a href="../home.html"><img class="logo-image" src="../assets/img/logotipo_sem_fundo.png" alt="Logo"></a></div>
+            <div class="nav-center"><label class="search-box" for="pageSelect"><select id="pageSelect" class="search-select" aria-label="Selecionar conteúdo"><option value="">Escolha um conteúdo</option><option value="1_algebra.html">Álgebra</option><option value="2_geometria.html">Geometria</option><option value="3_funcoesegraficos.html">Funções e Gráficos</option><option value="4_estatisticaprobabilidade.html">Estatística e Probabilidade</option><option value="5_trigonometria.html">Trigonometria</option><option value="6_calculo.html">Cálculo</option><option value="7_logaritmos.html">Logaritmos</option><option value="8_exponenciais.html">Exponenciais</option></select><span class="search-icon">▾</span></label></div>
+            <div class="nav-right"><a class="navbar-home-minhaConta" href="#"><img src="../assets/img/minha_conta.png" alt="Minha conta"></a></div>
+        </nav>
+        <main class="container">
+            <h1>Logaritmos</h1>
+            <section class="card">
+                <h2>1. O que é Logaritmo?</h2>
+                <p>Um <strong>logaritmo</strong> responde à pergunta: “qual expoente preciso colocar em uma base para obter determinado valor?”. Em outras palavras, ele é o inverso da exponenciação e ajuda a desfazer um crescimento rápido.</p>
+                <p>Por exemplo, em <span class="equation">2^3 = 8</span>, o número 3 é o expoente. O logaritmo correspondente é <span class="equation">\log_2(8) = 3</span>, porque 2 elevado a 3 resulta em 8. Isso mostra como logaritmo e potência estão ligados.</p>
+                <p>Essa ideia é muito útil porque muitos fenômenos naturais crescem ou diminuem muito rapidamente, e o logaritmo permite “comprimir” esses valores para facilitar a leitura e os cálculos. Em vez de lidar com números enormes, você trabalha com seus expoentes.</p>
+                <p>Outra forma de ver isso é comparar com a operação inversa: se a exponenciação “multiplica o número várias vezes”, o logaritmo pergunta “quantas vezes foi multiplicado?”.</p>
+            </section>
+            <section class="card">
+                <h2>2. Para que serve?</h2>
+                <p>Os logaritmos servem para simplificar cálculos com números muito grandes ou muito pequenos. Eles também ajudam a resolver equações exponenciais e a interpretar escalas especiais usadas em ciência e tecnologia.</p>
+                <p>Uma propriedade importante é <span class="equation">\log(ab) = \log(a) + \log(b)</span>, o que transforma multiplicações em somas e torna cálculos difíceis muito mais fáceis de manipular. Essa característica é essencial quando os números crescem rapidamente ou quando as escalas são muito amplas.</p>
+                <p>Por isso, o logaritmo aparece em áreas que lidam com crescimento, intensidade e medidas de escala, como biologia, finanças e acústica.</p>
+            </section>
+            <section class="card">
+                <h2>3. Aplicações reais</h2>
+                <p>Os logaritmos aparecem no pH de substâncias, na escala Richter de terremotos, na intensidade sonora em decibéis e em cálculos de crescimento financeiro com juros compostos.</p>
+                <p>Exemplo: se um terremoto mede 6 na escala Richter, ele é 10 vezes mais intenso do que um terremoto de 5, porque <span class="equation">R = \log_{10}(I)</span>. Outro exemplo é o pH de uma solução: <span class="equation">pH = -\log_{10}[H^+]</span>.</p>
+                <p><strong>Exemplos do cotidiano:</strong> 1) medir o pH de uma solução; 2) comparar a intensidade sonora em decibéis; 3) interpretar crescimento financeiro; 4) comparar terremotos pela escala Richter.</p>
+                <h3>Exemplos específicos do cotidiano</h3>
+                <p><strong>1. pH de uma solução:</strong> se <span class="equation">pH = -\log_{10}[H^+]</span> e <span class="equation">[H^+] = 10^{-3}</span>, então <span class="equation">pH = 3</span>.</p>
+                <p><strong>2. Intensidade sonora:</strong> em decibéis, <span class="equation">N = 10\log_{10}(I/I_0)</span>. Se <span class="equation">I = 100I_0</span>, então <span class="equation">N = 10\log_{10}(100) = 20 dB</span>.</p>
+                <p><strong>3. Crescimento financeiro:</strong> ao usar logaritmos para comparar rendimentos, a fórmula <span class="equation">\log(1,05) ≈ 0,048</span> ajuda a interpretar o crescimento.</p>
+                <p><strong>4. Terremotos:</strong> a escala Richter usa <span class="equation">R = \log_{10}(I)</span>, o que permite comparar terremotos muito diferentes.</p>
+            </section>
+        </main>
+    </div>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>

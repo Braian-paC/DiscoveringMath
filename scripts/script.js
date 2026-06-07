@@ -1,6 +1,16 @@
 const form = document.getElementById('uploadForm');
 const fileInput = document.getElementById('imagemInput');
 const resultDiv = document.getElementById('uploadResult');
+const pageSelect = document.getElementById('pageSelect');
+
+if (pageSelect) {
+  pageSelect.addEventListener('change', (event) => {
+    const target = event.target.value;
+    if (target) {
+      window.location.href = target;
+    }
+  });
+}
 
 function sanitizeLatex(latex) {
   if (!latex) return '';

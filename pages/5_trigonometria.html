@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trigonometria</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/logotipo_sem_fundo.png">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    
+    <div class="page-container">
+        <nav class="navbar-home">
+            <div class="nav-left"><a href="../home.html"><img class="logo-image" src="../assets/img/logotipo_sem_fundo.png" alt="Logo"></a></div>
+            <div class="nav-center"><label class="search-box" for="pageSelect"><select id="pageSelect" class="search-select" aria-label="Selecionar conteúdo"><option value="">Escolha um conteúdo</option><option value="1_algebra.html">Álgebra</option><option value="2_geometria.html">Geometria</option><option value="3_funcoesegraficos.html">Funções e Gráficos</option><option value="4_estatisticaprobabilidade.html">Estatística e Probabilidade</option><option value="5_trigonometria.html">Trigonometria</option><option value="6_calculo.html">Cálculo</option><option value="7_logaritmos.html">Logaritmos</option><option value="8_exponenciais.html">Exponenciais</option></select><span class="search-icon">▾</span></label></div>
+            <div class="nav-right"><a class="navbar-home-minhaConta" href="#"><img src="../assets/img/minha_conta.png" alt="Minha conta"></a></div>
+        </nav>
+        <main class="container">
+            <h1>Trigonometria</h1>
+            <section class="card">
+                <h2>1. O que é Trigonometria?</h2>
+                <p>A <strong>Trigonometria</strong> é a parte da matemática que estuda como ângulos e lados se relacionam, principalmente dentro de triângulos retângulos. Ela surgiu para medir alturas e distâncias difíceis de alcançar diretamente, mas hoje é usada em muitas áreas da ciência e da tecnologia.</p>
+                <p>Para entender o conceito, imagine um triângulo retângulo: um ângulo mede 90° e os outros dois ângulos são agudos. Nesse tipo de triângulo, as razões entre os lados sempre seguem padrões fixos, e essas razões recebem nomes especiais: seno, cosseno e tangente.</p>
+                <p>Exemplo: em um triângulo retângulo, <span class="equation">\sin(\theta) = \frac{cateto\ oposto}{hipotenusa}</span>, <span class="equation">\cos(\theta) = \frac{cateto\ adjacente}{hipotenusa}</span> e <span class="equation">\tan(\theta) = \frac{cateto\ oposto}{cateto\ adjacente}</span>.</p>
+                <p>Essas relações fazem com que, conhecendo um ângulo e um lado, seja possível descobrir outros lados sem medir tudo diretamente. Por isso, a Trigonometria funciona como uma ferramenta de cálculo e de observação do espaço.</p>
+            </section>
+            <section class="card">
+                <h2>2. Para que serve?</h2>
+                <p>A trigonometria serve para medir alturas, distâncias e ângulos sem precisar medir tudo diretamente. Ela é fundamental em física, navegação, astronomia e engenharia porque conecta formas e movimentos com medições precisas.</p>
+                <p>As funções trigonométricas seguem relações como <span class="equation">sen(θ) = \frac{cateto\ oposto}{hipotenusa}</span>, <span class="equation">cos(θ) = \frac{cateto\ adjacente}{hipotenusa}</span> e <span class="equation">tan(θ) = \frac{cateto\ oposto}{cateto\ adjacente}</span>. Com essas fórmulas, é possível descobrir um lado ou um ângulo a partir de informações parciais.</p>
+                <p>Isso é muito útil quando não dá para medir tudo no campo, como em construções, terrenos e movimentos periódicos.</p>
+            </section>
+            <section class="card">
+                <h2>3. Aplicações reais</h2>
+                <p>Na construção, mede-se inclinação de rampas e telhados. Na navegação, ajuda a localizar objetos e rotas. Em eletricidade e ondas, modela fenômenos periódicos como som e luz. Em astronomia, mede distâncias e posições de corpos celestes.</p>
+                <p>Exemplo: se um observador está a 30 m da base de um prédio e vê o topo com um ângulo de 45°, a altura pode ser estimada por <span class="equation">tan(45°) = \frac{h}{30}</span>, portanto <span class="equation">h = 30 × 1 = 30 m</span>. Outro exemplo é calcular a inclinação de uma rampa a partir do ângulo e da altura.</p>
+                <p><strong>Exemplos do cotidiano:</strong> 1) medir a altura de um poste; 2) calcular a inclinação de uma rampa; 3) prever o alcance de um lançamento; 4) modelar ondas sonoras ou luminosas.</p>
+                <h3>Exemplos específicos do cotidiano</h3>
+                <p><strong>1. Altura de um poste:</strong> se a distância até o poste é 20 m e o ângulo de elevação é 30°, então <span class="equation">tan(30°) = h/20</span>. Como <span class="equation">tan(30°) ≈ 0,577</span>, temos <span class="equation">h ≈ 20 × 0,577 = 11,54 m</span>.</p>
+                <p><strong>2. Inclinação de uma rampa:</strong> se a altura é 3 m e a base é 4 m, então <span class="equation">tan(θ) = 3/4 = 0,75</span>, e o ângulo é <span class="equation">θ ≈ 36,87°</span>.</p>
+                <p><strong>3. Trajetória de um objeto:</strong> a altura pode ser descrita por uma função periódica ou angular, e o ângulo ajuda a prever o alcance do lançamento.</p>
+                <p><strong>4. Ondas sonoras:</strong> a trigonometria ajuda a modelar oscilações como <span class="equation">y = A sen(ωt)</span>, onde <strong>A</strong> é a amplitude e <strong>ω</strong> a frequência.</p>
+            </section>
+        </main>
+    </div>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>

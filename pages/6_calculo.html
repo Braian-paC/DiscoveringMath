@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/logotipo_sem_fundo.png">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    
+    <div class="page-container">
+        <nav class="navbar-home">
+            <div class="nav-left"><a href="../home.html"><img class="logo-image" src="../assets/img/logotipo_sem_fundo.png" alt="Logo"></a></div>
+            <div class="nav-center"><label class="search-box" for="pageSelect"><select id="pageSelect" class="search-select" aria-label="Selecionar conteúdo"><option value="">Escolha um conteúdo</option><option value="1_algebra.html">Álgebra</option><option value="2_geometria.html">Geometria</option><option value="3_funcoesegraficos.html">Funções e Gráficos</option><option value="4_estatisticaprobabilidade.html">Estatística e Probabilidade</option><option value="5_trigonometria.html">Trigonometria</option><option value="6_calculo.html">Cálculo</option><option value="7_logaritmos.html">Logaritmos</option><option value="8_exponenciais.html">Exponenciais</option></select><span class="search-icon">▾</span></label></div>
+            <div class="nav-right"><a class="navbar-home-minhaConta" href="#"><img src="../assets/img/minha_conta.png" alt="Minha conta"></a></div>
+        </nav>
+        <main class="container">
+            <h1>Cálculo</h1>
+            <section class="card">
+                <h2>1. O que é Cálculo?</h2>
+                <p>O <strong>Cálculo</strong> é a área da matemática que estuda como as grandezas mudam e como essa mudança pode ser acumulada ao longo do tempo. Ele é usado para analisar movimentos, crescimento, queda, otimização e comportamento de sistemas que não são constantes.</p>
+                <p>Uma maneira intuitiva de entender o Cálculo é pensar em velocidade: se um carro percorre uma distância em um intervalo de tempo, a velocidade média é a razão entre distância e tempo. Mas o Cálculo vai além: ele permite olhar a velocidade em um instante exato, usando a ideia de variação infinitesimal.</p>
+                <p>Esse conceito aparece na <strong>derivada</strong>, que mede a taxa de variação de uma função. Por exemplo, para <span class="equation">f(x) = x²</span>, a derivada é <span class="equation">f'(x) = 2x</span>. Isso significa que, quando <strong>x</strong> aumenta, a taxa de crescimento de <strong>f(x)</strong> também muda.</p>
+                <p>A outra ideia central é a <strong>integral</strong>, que soma pequenas partes para obter um total. Juntas, derivada e integral formam a base do Cálculo e mostram como a matemática descreve mudanças contínuas.</p>
+            </section>
+            <section class="card">
+                <h2>2. Para que serve?</h2>
+                <p>O cálculo ajuda a entender como coisas mudam ao longo do tempo, como velocidade, aceleração, crescimento e área sob curvas. Ele serve para medir mudanças instantâneas e somas acumuladas de grandezas.</p>
+                <p>As ideias centrais aparecem nas fórmulas <span class="equation">f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}</span> e <span class="equation">\int f(x) dx</span>. A primeira mede a taxa de variação; a segunda soma infinitos pequenos pedaços. Isso dá ao cálculo um poder enorme na modelagem de fenômenos reais.</p>
+                <p>Por isso, ele é a base para analisar variação, otimização e comportamento de sistemas em física, economia e engenharia.</p>
+            </section>
+            <section class="card">
+                <h2>3. Aplicações reais</h2>
+                <p>Na física, o cálculo descreve movimento e força. Na economia, ajuda a maximizar lucro e minimizar custo. Na engenharia, é usado para otimizar designs, prever desempenho e analisar sistemas complexos.</p>
+                <p>Exemplo: se a posição de um carro é dada por <span class="equation">s(t) = 4t²</span>, então sua velocidade é <span class="equation">v(t) = s'(t) = 8t</span>. Se quisermos calcular a distância percorrida entre <strong>t = 1</strong> e <strong>t = 3</strong>, usamos <span class="equation">\int_1^3 8t dt</span>. Outro exemplo é comparar o crescimento de um produto ao longo do tempo.</p>
+                <p><strong>Exemplos do cotidiano:</strong> 1) acompanhar a velocidade de um carro; 2) medir o crescimento de uma planta; 3) otimizar o custo de produção; 4) calcular a área sob um gráfico.</p>
+                <h3>Exemplos específicos do cotidiano</h3>
+                <p><strong>1. Velocidade de um carro:</strong> se <span class="equation">s(t) = 4t²</span>, então a velocidade é <span class="equation">v(t) = s'(t) = 8t</span>. Em <strong>t = 3</strong>, a velocidade é <span class="equation">v(3) = 24</span>.</p>
+                <p><strong>2. Crescimento de uma planta:</strong> se a altura cresce conforme <span class="equation">h(t) = 2t + 1</span>, a taxa de crescimento é <span class="equation">h'(t) = 2</span> cm por dia.</p>
+                <p><strong>3. Custo de produção:</strong> se o custo for <span class="equation">C(x) = x² + 10x</span>, a derivada <span class="equation">C'(x) = 2x + 10</span> mostra como o custo varia ao aumentar a produção.</p>
+                <p><strong>4. Área sob um gráfico:</strong> a integral <span class="equation">\int_0^4 x dx = 8</span> representa a área sob a curva entre 0 e 4.</p>
+            </section>
+        </main>
+    </div>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>

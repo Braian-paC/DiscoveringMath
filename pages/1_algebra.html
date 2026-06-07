@@ -3,11 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Álgebra</title>
-    <link rel="icon" type="/image/x-icon" href="../assets/img/logotipo_sem_fundo.png">
+    <link rel="icon" type="image/x-icon" href="../assets/img/logotipo_sem_fundo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #082a44;
+            color: #1f2937;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .page-container {
+            width: 100%;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 900px;
+            width: calc(100% - 32px);
+            margin: 24px auto 0;
+            background: #fff;
+            padding: 24px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            box-sizing: border-box;
+        }
+        h1, h2 {
+            color: #1d4ed8;
+        }
+        h3 {
+            color: #1e3a8a;
+            margin-top: 14px;
+        }
+        p {
+            font-size: 1.02rem;
+        }
+        strong {
+            color: #0f172a;
+        }
+        .highlight {
+            color: #1d4ed8;
+            font-weight: bold;
+        }
+        .equation {
+            display: block;
+            margin: 8px 0;
+            padding: 8px 10px;
+            background: #ffffff;
+            border-left: 3px solid #93c5fd;
+            font-style: italic;
+            color: #111827;
+        }
+        .card {
+            margin-bottom: 18px;
+            padding: 14px;
+            border-left: 4px solid #2563eb;
+            background: #eff6ff;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="page-container">
+        <nav class="navbar-home" style="box-sizing: border-box; width: 100%; padding: 0 1rem; min-height: 110px; position: sticky; top: 0; z-index: 10;">
+            <div class="nav-left">
+                <a href="../home.html">
+                    <img class="logo-image" src="../assets/img/logotipo_sem_fundo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="nav-center" style="flex: 1; justify-content: center; min-width: 0;">
+                <label class="search-box" for="pageSelect" style="width: 100%; max-width: 640px;">
+                    <select id="pageSelect" class="search-select" aria-label="Selecionar conteúdo">
+                        <option value="">Escolha um conteúdo</option>
+                        <option value="1_algebra.html">Álgebra</option>
+                        <option value="2_geometria.html">Geometria</option>
+                        <option value="3_funcoesegraficos.html">Funções e Gráficos</option>
+                        <option value="4_estatisticaprobabilidade.html">Estatística e Probabilidade</option>
+                        <option value="5_trigonometria.html">Trigonometria</option>
+                        <option value="6_calculo.html">Cálculo</option>
+                        <option value="7_logaritmos.html">Logaritmos</option>
+                        <option value="8_exponenciais.html">Exponenciais</option>
+                    </select>
+                    <span class="search-icon">▾</span>
+                </label>
+            </div>
+            <div class="nav-right">
+                <a class="navbar-home-minhaConta" href="#"><img src="../assets/img/minha_conta.png" alt="Minha conta"></a>
+            </div>
+        </nav>
+        <main class="container">
+        <h1>Álgebra</h1>
+
+        <section class="card">
+            <h2>1. O que é Álgebra?</h2>
+            <p>
+                A <strong>Álgebra</strong> é a parte da matemática que usa letras, símbolos e regras para representar números e relações.
+                Em vez de trabalhar apenas com valores fixos, ela permite pensar em situações gerais, como “se <strong>x</strong> representa o preço de um produto, então <strong>2x</strong> é o preço de duas unidades”.
+                Essa ideia é poderosa porque transforma problemas concretos em expressões que podem ser manipuladas, resolvidas e interpretadas.
+            </p>
+            <p>
+                Um exemplo simples: a expressão <span class="equation">3x + 5</span> mostra uma regra. Se <strong>x = 2</strong>, então <span class="equation">3x + 5 = 11</span>Se <strong>x = 4</strong>, então <span class="equation">3x + 5 = 17</span>
+                Isso mostra como a Álgebra funciona como uma linguagem que descreve padrões e relações.
+            </p>
+            <p>
+                Outra forma de entender é pensar que a Álgebra ajuda a responder perguntas como: “qual valor faz essa igualdade ser verdadeira?”
+                Por exemplo, em <span class="equation">x + 7 = 12</span>o valor de <strong>x</strong> é <strong>5</strong>, porque <span class="equation">5 + 7 = 12</span>
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>2. Para que serve?</h2>
+            <p>
+                A <strong>Álgebra</strong> serve para transformar situações complicadas em modelos mais fáceis de entender.
+                Ela ajuda a descobrir valores desconhecidos, comparar grandezas, prever resultados e resolver problemas com lógica.
+                Em vez de depender só da memória, ela ensina a pensar em <strong>regras, relações e padrões</strong>.
+            </p>
+            <p>
+                Esse conteúdo é importante porque permite escrever uma situação real em linguagem matemática. Ao fazer isso, você passa a ver a estrutura do problema e não apenas números isolados.
+                Com isso, fica mais fácil decidir qual operação usar, encontrar a solução certa e confirmar se o resultado faz sentido.
+            </p>
+            <p>
+                Um exemplo simples: se cada caderno custa R$ 8 e você quer comprar <strong>x</strong> cadernos, o total será <span class="equation">8x</span>
+                Se você tiver R$ 40, a equação <span class="equation">8x = 40</span> mostra que <span class="equation">x = 5</span>Isso é muito útil em planejamento financeiro e compras.
+            </p>
+            <p>
+                Outra aplicação aparece em transportes e serviços: em uma corrida de táxi, o preço pode ser <span class="equation">5 + 3x</span>onde <strong>5</strong> é a bandeirada e <strong>3</strong> é o valor por quilômetro.
+                Com essa fórmula, você consegue calcular rapidamente o custo de qualquer trajeto e comparar opções.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>3. Aplicações reais</h2>
+            <p>
+                A <strong>Álgebra</strong> aparece em várias situações do dia a dia. No mercado, ela ajuda a calcular o custo total, estimar descontos e comparar ofertas.
+                Exemplo: um produto com preço <strong>x</strong> e desconto de 15% passa a custar <span class="equation">0,85x</span>
+            </p>
+            <p>
+                Na finança, a Álgebra é usada para calcular juros, parcelas, lucros, investimentos e planejamento de orçamento. Exemplo: um investimento de R$ 1000 com rendimento de 5% ao mês pode ser modelado como <span class="equation">1000(1,05)^n</span>
+            </p>
+            <p>
+                Na saúde, ela ajuda em dosagens e fórmulas de controle. Na engenharia, faz cálculos de força e resistência. Na informática, é essencial para algoritmos, programação e análise de dados.
+            </p>
+
+            <h3>Exemplos específicos do cotidiano</h3>
+            <p>
+                <strong>1. Compras no mercado:</strong> se cada pacote custa R$ 6 e você quer comprar <strong>y</strong> pacotes, o gasto total é <span class="equation">6y</span>Isso ajuda a controlar o orçamento antes de ir ao supermercado.
+            </p>
+            <p>
+                <strong>2. Viagem de carro:</strong> se o carro faz 14 km com 1 litro e você vai percorrer 210 km, então <span class="equation">14x = 210</span>
+                ou seja, <span class="equation">x = 15l</span>A Álgebra ajuda a planejar combustível.
+            </p>
+            <p>
+                <strong>3. Celular e internet:</strong> se um plano cobra R$ 30 fixos e R$ 2 por GB usado, o valor final é <span class="equation">30 + 2g</span>Assim, você consegue prever quanto vai pagar conforme o uso.
+            </p>
+            <p>
+                <strong>4. Repartir contas entre amigos:</strong> se a conta total é R$ 120 e são 4 pessoas, a parte de cada uma é <span class="equation">120/4 = 30</span>A Álgebra ajuda a dividir valores de forma justa e rápida.
+            </p>
+        </section>
+        </main>
+    </div>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
