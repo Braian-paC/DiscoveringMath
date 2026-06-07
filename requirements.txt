@@ -1,0 +1,8 @@
+Flask
+sympy
+openai>=1.0.0
+python-dotenv
+pix2text==1.1.6
+rapidocr==3.7.0
+omegaconf==2.2.3
+antlr4-python3-runtime==4.9.3

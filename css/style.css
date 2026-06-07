@@ -38,8 +38,13 @@ body {
 }
 
 .logo-image {
-    height: 58px;
+    height: 100px;
     width: auto;
+}
+
+.logo-image-font {
+    font-size: 25px;
+    word-wrap: break-word;
 }
 
 .nav-center {
@@ -134,11 +139,12 @@ body {
 }
 
 .file-upload-pill span:last-child {
+    margin-left: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 46px;
-    height: 46px;
+    width: 80px;
+    height: 80px;
     background: #2f9f4a;
     border-radius: 50%;
     color: #fff;
